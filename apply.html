@@ -3,38 +3,72 @@
 	<title>Comapny name - apply</title>
 	<link rel="stylesheet" href="./styles/styles.css">
 </head>
+<style>
+	body { margin: 0px; }
+	/* Semantic elements */
+	nav {
+		padding-top: 5px;
+		padding-bottom: 5px;
+		padding-left: 20%;
+		padding-right: 20%;
+		height: 18px;
+	}
+	main { padding: 20px;}
+	footer {
+		background-color: darkgrey;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		padding-left: 10px;
+	}
+	/* Text elements */
+	h1, h2, h3 { margin: 0;}
+	/* Classes */
+	.navlink { float: left; width: 25%; text-align: center; }
+	/* IDs */
+	#title { padding: 20px; }
+</style>
 <body>
 	<header>
-		<h1>Apply</h1>
-		<a href="./index.html">Homepage</a>
-		<a href="./jobs.html">Jobs</a>
-		<a href="./about.html">About</a>
-		<a href="./enhancements.html">Enhancements</a>
+		<div id="title">
+			<h1>IT Place</h1>
+			<h2>Apply</h2>
+		</div>
+		<nav>
+			<div class="navlink"><a href="./index.html">Homepage</a></div>
+			<div class="navlink"><a href="./jobs.html">Jobs</a></div>
+			<div class="navlink"><a href="./about.html">About</a></div>
+			<div class="navlink"><a href="./enhancements.html">Enhancements</a></div>
+		</nav>
 	</header>
-	<h2>TODO</h2>
-	<ul>
-		<li>Do application page</li>
-		<li>User should not be able to submit if any fields are blank</li>
-	</ul>
-	<form action="https://mercury.swin.edu.au/it000000/formtest.php">
-		<label for="jobrefnum">Job Reference Number: </label>
-			<input type="number" name="jobrefnum" id="jobrefnum"><br>
-		<label for="fname">First name:</label>
-			<input type="text" name="fname" id="fname"><br>
-		<label for="fname">Last name:</label>
-			<input type="text" name="lname" id="lname"><br>
-		<label for="dob">Date of Birth:</label>
-			<input type="date" name="dob" id="dob"><br>
-		<br>Gender: <br>
-		<label for="gendermale">Male </label>
-			<input type="radio" name="gender" id="gendermale"><br>
-		<label for="genderfemale">Female </label>
-			<input type="radio" name="gender" id="genderfemale"><br>
-		<label for="genderneither">N/A</label>
-			<input type="radio" name="gender" id="genderneither"><br>
-		<label for="address">Address</label>
-			<input type="text" name="address" id="address"><br>
-		<br>
-		<label for="apply">Apply</label> <input type="submit" id="apply" value="Apply">
-	</form>
+	<main>
+		<h3>TODO</h3>
+		<ul>
+			<li>Do application page</li>
+			<li>User should not be able to submit if any fields are blank</li>
+		</ul>
+		<article>
+			<form action="https://mercury.swin.edu.au/it000000/formtest.php">
+				<label for="jobrefnum">Job Reference Number: </label>
+				<input type="number" name="jobrefnum" id="jobrefnum"><br>
+				<label for="fname">First name:</label>
+				<input type="text" name="fname" id="fname"><br>
+				<label for="fname">Last name:</label>
+				<input type="text" name="lname" id="lname"><br>
+				<label for="dob">Date of Birth:</label>
+				<input type="date" name="dob" id="dob"><br>
+				<br>Gender: <br>
+				<label for="gendermale">Male </label>
+				<input type="radio" name="gender" id="gendermale"><br>
+				<label for="genderfemale">Female </label>
+				<input type="radio" name="gender" id="genderfemale"><br>
+				<label for="genderneither">N/A</label>
+				<input type="radio" name="gender" id="genderneither"><br>
+				<label for="address">Address</label>
+				<input type="text" name="address" id="address"><br>
+				<br>
+				<label for="apply">Apply</label> <input type="submit" id="apply" value="Apply">
+			</form>
+		</article>
+	</main>
+	<footer>Footer</footer>
 </body>
