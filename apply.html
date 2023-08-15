@@ -83,100 +83,52 @@
 		</ul>
 		<article>
 			<form action="https://mercury.swin.edu.au/it000000/formtest.php">
-				<fieldset>
-					<legend>Application</legend>
-					<p>Fields marked with an <em>asterisk*</em> are <strong>required</strong></p>
-					<label for="jobrefnum">Job Reference Number: </label>
-					<input type="text" name="jobrefnum" id="jobrefnum" required="required" pattern="\d+">
-					<br>
-					<fieldset>
-						<legend>About you</legend>
-						<label for="given_names">Given name: *</label>
-						<input type="text" name="given_names" id="given_names" size="40" required="required" pattern="[\w\s]+">
-						<br>
-						<label for="surname">Surname name: *</label>
-						<input type="text" name="surname" id="surname" size="40" required="required" pattern="\w">
-						<br>
-						<label for="dob">Date of Birth: *</label>
-						<input type="date" name="dob" id="dob" required="required">
-						<br>
-						Gender: *<br>
-						<label for="male">Male </label>
-						<input type="radio" name="gender" id="male" required="required">
-						<label for="female">Female </label>
-						<input type="radio" name="gender" id="female">
-						<label for="neither">N/A</label>
-						<input type="radio" name="gender" id="neither">
-					</fieldset>
-					<fieldset>
-						<legend>Infomation</legend>
-						<label for="address">Street address: *</label>
-						<input type="text" name="address" id="address" size="40" required="required" pattern="\d{0,8}[\w\s]+\">
-						<br>
-						<label for="town">Suburb/Town: *</label>
-						<input type="text" name="town" id="town" required="required" pattern="[\w\s]+">
-						<br>
-						<label for="state">State/Territory: *</label>
-						<select name="state" id="state" required="required">
-							<option value="">Please Select</option>
-							<optgroup label="States">
-								<option value="NSW">NSW</option>
-								<option value="QLD">QLD</option>
-								<option value="SA">SA</option>
-								<option value="TAS">TAS</option>
-								<option value="VIC">VIC</option>
-								<option value="WA">WA</option>
-							</optgroup>
-							<optgroup label="Territories">
-								<option value="ACT">ACT</option>
-								<option value="NT">NT</option>
-							</optgroup>
-						</select>
-						<br>
-						<label for="postcode">Postcode: *</label>
-						<input type="text" name="postcode" id="postcode" size="5" required="required" pattern="\d{1,6}">
-						<br>
-						<label for="email">Email address: *</label>
-						<input type="email" name="email" id="email" size="30" required="required">
-						<br>
-						<label for="phonenum">Phone number: *</label>
-						<input type="text" name="phonenum" id="phonenum" size="10" required="required" pattern="\d{8,12}">
-						<br>
-					</fieldset>
-					<fieldset>
-						<legend>Your Skills</legend>
-						<label for="computer_literacy">Computer literacy:</label>
-						<input type="checkbox" name="computer_literacy" id="computer_literacy">
-						<br>
-						<label for="problem_solving">Problem solving:</label>
-						<input type="checkbox" name="problem_solving" id="problem_solving">
-						<br>
-						<label for="teamwork">Teamwork:</label>
-						<input type="checkbox" name="teamwork" id="teamwork">
-						<br>
-						<label for="communication">Communication:</label>
-						<input type="checkbox" name="communication" id="communication">
-						<br>
-						<label for="interpersonal">Interpersonal:</label>
-						<input type="checkbox" name="interpersonal" id="interpersonal">
-						<br>
-						<label for="learning">Learning:</label>
-						<input type="checkbox" name="learning" id="learning">
-						<br>
-						<label for="english_literacy">English literacy:</label>
-						<input type="checkbox" name="english_literacy" id="english_literacy">
-						<br>
-						<label for="mathemetics">Mathemetics:</label>
-						<input type="checkbox" name="mathemetics" id="mathemetics">
-						<br>
-						<label for="otherskills">Other skills:</label>
-						<br>
-						<textarea name="otherskills" id="otherskills" rows="5" cols="40" placeholder="Please type here..."></textarea>
-					</fieldset>
-					<br>
-					<input type="submit" value="Apply">
-					<input type="reset" value="Reset">
-				</fieldset>
+				<label for="jobrefnum">Job Reference Number: </label>
+				<input type="number" name="jobrefnum" id="jobrefnum"><br>
+				<label for="fname">First name:</label>
+				<input type="text" name="fname" id="fname"><br>
+				<label for="fname">Last name:</label>
+				<input type="text" name="lname" id="lname"><br>
+				<label for="dob">Date of Birth:</label>
+				<input type="date" name="dob" id="dob"><br>
+				<br>Gender: <br>
+				<label for="gendermale">Male </label>
+				<input type="radio" name="gender" id="gendermale"><br>
+				<label for="genderfemale">Female </label>
+				<input type="radio" name="gender" id="genderfemale"><br>
+				<label for="genderneither">N/A</label>
+				<input type="radio" name="gender" id="genderneither"><br>
+				<label for="address">Address:</label>
+				<input type="text" name="address" id="address"><br>
+				<label for="town">Suburb/Town:</label>
+				<input type="text" name="town" id="town"><br>
+				<label for="state">State/Territory:</label>
+				<select name="state" id="state">
+					<optgroup label="States">
+						<option value="NSW">NSW</option>
+						<option value="QLD">QLD</option>
+						<option value="SA">SA</option>
+						<option value="TAS">TAS</option>
+						<option value="VIC">VIC</option>
+						<option value="WA">WA</option>
+					</optgroup>
+					<optgroup label="Territories">
+						<option value="ACT">ACT</option>
+						<option value="NT">NT</option>
+					</optgroup>
+				</select><br>
+				<label for="postcode">Postcode:</label>
+				<input type="range" name="postcode" id="postcode"><br>
+				<label for="email">Email address:</label>
+				<input type="email" name="email" id="email"><br>
+				<label for="phonenum">Phone number:</label>
+				<input type="number" name="phonenum" id="phonenum"><br>
+				<label for="skills">Skills:</label>
+				<input type="checkbox" name="skills" id="skills"><br>
+				<label for="otherskills">Other skills:</label>
+				<input type="text" name="otherskills" id="otherskills"><br>
+				<br>
+				<label for="apply">Apply</label> <input type="submit" id="apply" value="Apply">
 			</form>
 		</article>
 	</main>
