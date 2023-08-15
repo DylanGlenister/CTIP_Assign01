@@ -63,8 +63,35 @@
 				<input type="radio" name="gender" id="genderfemale"><br>
 				<label for="genderneither">N/A</label>
 				<input type="radio" name="gender" id="genderneither"><br>
-				<label for="address">Address</label>
+				<label for="address">Address:</label>
 				<input type="text" name="address" id="address"><br>
+				<label for="town">Suburb/Town:</label>
+				<input type="text" name="town" id="town"><br>
+				<label for="state">State/Territory:</label>
+				<select name="state" id="state">
+					<optgroup label="States">
+						<option value="NSW">NSW</option>
+						<option value="QLD">QLD</option>
+						<option value="SA">SA</option>
+						<option value="TAS">TAS</option>
+						<option value="VIC">VIC</option>
+						<option value="WA">WA</option>
+					</optgroup>
+					<optgroup label="Territories">
+						<option value="ACT">ACT</option>
+						<option value="NT">NT</option>
+					</optgroup>
+				</select><br>
+				<label for="postcode">Postcode:</label>
+				<input type="range" name="postcode" id="postcode"><br>
+				<label for="email">Email address:</label>
+				<input type="email" name="email" id="email"><br>
+				<label for="phonenum">Phone number:</label>
+				<input type="number" name="phonenum" id="phonenum"><br>
+				<label for="skills">Skills:</label>
+				<input type="checkbox" name="skills" id="skills"><br>
+				<label for="otherskills">Other skills:</label>
+				<input type="text" name="otherskills" id="otherskills"><br>
 				<br>
 				<label for="apply">Apply</label> <input type="submit" id="apply" value="Apply">
 			</form>
