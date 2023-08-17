@@ -1,15 +1,9 @@
 html {
 	font-family: Arial, Helvetica, sans-serif;
-	padding: 0;
-	margin: 0;
 }
-body {
-	margin: 0;
-	padding: 0;
-}
-.title {
-	margin: 0;
-	padding: 50;
-	height: 10em;
+header {
 	background-color: #D2CC20;
+}
+nav {
+	background-color: darkgray;
 }
