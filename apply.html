@@ -5,11 +5,13 @@
 </head>
 <style>
 	header {
-		background-color: #E4D00A;
+		background: rgb(255,235,173);
+		background: linear-gradient(90deg, rgba(255,235,173,1) 0%, rgba(255,218,140,1) 100%);
 	}
 	body { margin: 0px; }
 	/* Semantic elements */
 	nav {
+		background-color: #C29155;
 		padding-top: 5px;
 		padding-bottom: 5px;
 		padding-left: 20%;
@@ -18,10 +20,8 @@
 	}
 	main { padding: 20px;}
 	footer {
-		background-color: darkgrey;
-		padding-top: 5px;
-		padding-bottom: 5px;
-		padding-left: 10px;
+		background: rgb(255,235,173);
+		background: linear-gradient(90deg, rgba(255,235,173,1) 0%, rgba(255,218,140,1) 100%);
 	}
 	/* Text elements */
 	h1, h2, h3 { margin: 0;}
@@ -29,6 +29,11 @@
 	.navlink { float: left; width: 25%; text-align: center; }
 	/* IDs */
 	#title { padding: 20px; }
+	#feet { padding: 10px; }
+	#highlight {
+		height: 5px;
+		background-color: rgb(255, 204, 110);
+	}
 </style>
 <body>
 	<header>
@@ -36,6 +41,7 @@
 			<img id="logo" src="./images/MochaLogo.png">
 			<h1>Apply</h1>
 		</div>
+		<div id="highlight"></div>
 		<nav>
 			<div class="navlink"><a href="./index.html">Homepage</a></div>
 			<div class="navlink"><a href="./jobs.html">Jobs</a></div>
