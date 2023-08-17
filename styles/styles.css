@@ -1,9 +1,33 @@
 html {
 	font-family: Arial, Helvetica, sans-serif;
 }
+body { margin: 0px; }
+/* Semantic elements */
 header {
-	background-color: #D2CC20;
+	background: rgb(255,235,173);
+	background: linear-gradient(90deg, rgba(255,235,173,1) 0%, rgba(255,218,140,1) 100%);
 }
 nav {
-	background-color: darkgray;
+	background-color: #C29155;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 20%;
+	padding-right: 20%;
+	height: 18px;
+}
+main { padding: 20px;}
+footer {
+	background: rgb(255,235,173);
+	background: linear-gradient(90deg, rgba(255,235,173,1) 0%, rgba(255,218,140,1) 100%);
+}
+/* Text elements */
+h1, h2, h3 { margin: 0;}
+/* Classes */
+.navlink { float: left; width: 25%; text-align: center; }
+/* IDs */
+#title { padding: 20px; }
+#postscript { padding: 10px; }
+#highlight {
+	height: 5px;
+	background-color: rgb(255, 204, 110);
 }
