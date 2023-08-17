@@ -5,11 +5,13 @@
 </head>
 <style>
 	header {
-		background-color: #E4D00A;
+		background: rgb(255,235,173);
+		background: linear-gradient(90deg, rgba(255,235,173,1) 0%, rgba(255,218,140,1) 100%);
 	}
 	body { margin: 0px; }
 	/* Semantic elements */
 	nav {
+		background-color: #C29155;
 		padding-top: 5px;
 		padding-bottom: 5px;
 		padding-left: 20%;
@@ -18,10 +20,8 @@
 	}
 	main { padding: 20px;}
 	footer {
-		background-color: darkgrey;
-		padding-top: 5px;
-		padding-bottom: 5px;
-		padding-left: 10px;
+		background: rgb(255,235,173);
+		background: linear-gradient(90deg, rgba(255,235,173,1) 0%, rgba(255,218,140,1) 100%);
 	}
 	/* Text elements */
 	h1, h2, h3 { margin: 0;}
@@ -29,13 +29,19 @@
 	.navlink { float: left; width: 25%; text-align: center; }
 	/* IDs */
 	#title { padding: 20px; }
+	#feet { padding: 10px; }
+	#highlight {
+		height: 5px;
+		background-color: rgb(255, 204, 110);
+	}
 </style>
 <body>
 	<header>
 		<div id="title">
-			<h1>IT Place</h1>
+			<h1>Proud IT</h1>
 			<h2>Apply</h2>
 		</div>
+		<div id="highlight"></div>
 		<nav>
 			<div class="navlink"><a href="./index.html">Homepage</a></div>
 			<div class="navlink"><a href="./jobs.html">Jobs</a></div>
@@ -113,12 +119,33 @@
 					</fieldset>
 					<fieldset>
 						<legend>Your Skills</legend>
-						<label for="skills">Skills:</label>
-						<input type="checkbox" name="skills" id="skills">
+						<label for="computer_literacy">Computer literacy:</label>
+						<input type="checkbox" name="computer_literacy" id="computer_literacy">
+						<br>
+						<label for="problem_solving">Problem solving:</label>
+						<input type="checkbox" name="problem_solving" id="problem_solving">
+						<br>
+						<label for="teamwork">Teamwork:</label>
+						<input type="checkbox" name="teamwork" id="teamwork">
+						<br>
+						<label for="communication">Communication:</label>
+						<input type="checkbox" name="communication" id="communication">
+						<br>
+						<label for="interpersonal">Interpersonal:</label>
+						<input type="checkbox" name="interpersonal" id="interpersonal">
+						<br>
+						<label for="learning">Learning:</label>
+						<input type="checkbox" name="learning" id="learning">
+						<br>
+						<label for="english_literacy">English literacy:</label>
+						<input type="checkbox" name="english_literacy" id="english_literacy">
+						<br>
+						<label for="mathemetics">Mathemetics:</label>
+						<input type="checkbox" name="mathemetics" id="mathemetics">
 						<br>
 						<label for="otherskills">Other skills:</label>
 						<br>
-						<textarea name="otherskills" id="otherskills" rows="4" cols="20" placeholder="Please type here..."></textarea>
+						<textarea name="otherskills" id="otherskills" rows="5" cols="40" placeholder="Please type here..."></textarea>
 					</fieldset>
 					<br>
 					<input type="submit" value="Apply">
@@ -127,5 +154,8 @@
 			</form>
 		</article>
 	</main>
-	<footer>Footer</footer>
+	<footer>
+		<div id="highlight"></div>
+		<div id="feet">Footer</div>
+	</footer>
 </body>
