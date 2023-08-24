@@ -23,7 +23,7 @@ nav a {
 	border: 1px solid #ffffff;
 }
 nav a:hover {
-	border: 1px solid whitesmoke;
+	border: 1px solid lightgrey;
 }
 main { padding: 20px;}
 /* Text elements */
