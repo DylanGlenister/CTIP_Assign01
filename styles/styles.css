@@ -47,3 +47,10 @@ h1, h2, h3 { margin: 0;}
 #logo {
 	height: 150px;
 }
+#index {
+	background-image: url(images/beans.jpg);
+}
+#index article {
+	background-color: #ffffff;
+	background-image: none;
+}
