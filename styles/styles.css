@@ -59,7 +59,7 @@ text-align: center;
 aside {
 border: 4px inset #A07423 ;
 border-radius: 14px;
-margin: 1em;
+margin: 2em 1em;
 padding: 1em;
 float: right;
 width: 25%;
@@ -82,4 +82,14 @@ color: #A07423;
 
 a {
 color: #C6AA75;
+}
+
+section {
+	border: 2px solid #A88B55;
+} 
+
+marquee:hover {
+	color: limegreen;
+	font-size:  1.5em;
+	fond
 }
