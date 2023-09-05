@@ -1,3 +1,10 @@
+/*
+filename: styles.css
+authors: Dylan Glenister, Melusi Ndebele, Sam Glasser
+created: 03/08/2023
+last modified: 05/09/2023
+description: This is the singular stylesheet for the assignment website
+*/
 * {
 	font-family: Arial, Helvetica, sans-serif, system-ui;
 }
