@@ -24,32 +24,38 @@
 				<fieldset>
 					<legend>Application</legend>
 					<p>Fields marked with an <em>asterisk*</em> are <strong>required</strong></p>
-					<label for="jobrefnum">Job Reference Number: </label>
-					<input type="text" name="jobrefnum" id="jobrefnum" required="required" pattern="\d+">
+					<label for="jobrefnum">Job Reference Number: *</label>
+					<input type="text" name="jobrefnum" id="jobrefnum" required="required" pattern="\d{5}">
 					<br>
+
 					<fieldset>
 						<legend>About you</legend>
 						<label for="given_names">Given name: *</label>
-						<input type="text" name="given_names" id="given_names" size="40" required="required" pattern="[\w\s]+">
+						<input type="text" name="given_names" id="given_names" size="40" required="required" pattern="[\w\s]{1,20}">
 						<br>
 						<label for="surname">Surname name: *</label>
-						<input type="text" name="surname" id="surname" size="40" required="required" pattern="\w">
+						<input type="text" name="surname" id="surname" size="40" required="required" pattern="[\w\s]{1,20}">
 						<br>
 						<label for="dob">Date of Birth: *</label>
 						<input type="date" name="dob" id="dob" required="required">
 						<br>
-						Gender: *<br>
-						<label for="male">Male </label>
-						<input type="radio" name="gender" id="male" required="required">
-						<label for="female">Female </label>
-						<input type="radio" name="gender" id="female">
-						<label for="neither">N/A</label>
-						<input type="radio" name="gender" id="neither">
+						<fieldset>
+							<legend>Gender</legend>
+							<input type="radio" name="gender" id="male" required="required">
+							<label for="male">Male </label>
+							<br>
+							<input type="radio" name="gender" id="female">
+							<label for="female">Female </label>
+							<br>
+							<input type="radio" name="gender" id="neither">
+							<label for="neither">Prefer not to say</label>
+						</fieldset>
 					</fieldset>
+
 					<fieldset>
-						<legend>Infomation</legend>
+						<legend>Contact Information</legend>
 						<label for="address">Street address: *</label>
-						<input type="text" name="address" id="address" size="40" required="required" pattern="\d{0,8}[\w\s]+\">
+						<input type="text" name="address" id="address" size="40" required="required" pattern="[\d\w\s]{1,40}">
 						<br>
 						<label for="town">Suburb/Town: *</label>
 						<input type="text" name="town" id="town" required="required" pattern="[\w\s]+">
@@ -72,7 +78,7 @@
 						</select>
 						<br>
 						<label for="postcode">Postcode: *</label>
-						<input type="text" name="postcode" id="postcode" size="5" required="required" pattern="\d{1,6}">
+						<input type="text" name="postcode" id="postcode" size="5" required="required" pattern="\d{4}">
 						<br>
 						<label for="email">Email address: *</label>
 						<input type="email" name="email" id="email" size="30" required="required">
@@ -81,6 +87,7 @@
 						<input type="text" name="phonenum" id="phonenum" size="10" required="required" pattern="\d{8,12}">
 						<br>
 					</fieldset>
+
 					<fieldset>
 						<legend>Your Skills</legend>
 						<label for="computer_literacy">Computer literacy:</label>
@@ -111,6 +118,7 @@
 						<br>
 						<textarea name="otherskills" id="otherskills" rows="5" cols="40" placeholder="Please type here..."></textarea>
 					</fieldset>
+
 					<br>
 					<input type="submit" value="Apply">
 					<input type="reset" value="Reset">
@@ -118,6 +126,7 @@
 			</form>
 		</article>
 	</main>
+
 	<footer>
 		<div class="highlight"></div>
 		<div id="postscript">Footer</div>
