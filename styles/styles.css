@@ -63,6 +63,9 @@ header, nav, main, footer {
 	border: 5px solid #a8754c;
 	border-radius: 20px;
 }
+article {
+	padding: 5px;
+}
 aside {
 	border: 4px inset #A07423 ;
 	border-radius: 14px;
@@ -83,7 +86,7 @@ header h1 {
 }
 /* Text elements */
 h1, h2, h3 {
-	margin: 0;
+	margin: 5px 2px;
 }
 h1 {
 	font-size: 2.6em;
