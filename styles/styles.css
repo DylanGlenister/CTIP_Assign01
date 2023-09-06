@@ -8,7 +8,9 @@ description: This is the singular stylesheet for the assignment website
 * {
 	font-family: Arial, Helvetica, sans-serif, system-ui;
 }
-body { margin: 0px; }
+body {
+	margin: 0px;
+}
 /* Semantic elements */
 header, footer {
 	background: rgb(255,247,238);
@@ -45,8 +47,9 @@ h1, h2, h3 { margin: 0;}
 	padding: 20px;
 	display: flex;
 }
-#postscript { padding: 10px;
-text-align: center;
+#postscript {
+	padding: 10px;
+	text-align: center;
 }
 #title h1 {
 	font-family: Georgia, 'Times New Roman', Times, serif;
@@ -65,29 +68,26 @@ text-align: center;
 	background-image: none;
 }
 aside {
-border: 4px inset #A07423 ;
-border-radius: 14px;
-margin: 1em;
-padding: 1em;
-float: right;
-width: 25%;
-box-shadow: 10px 10px 5px #aaaaaa;
+	border: 4px inset #A07423 ;
+	border-radius: 14px;
+	margin: 1em;
+	padding: 1em;
+	float: right;
+	width: 25%;
+	box-shadow: 10px 10px 5px #aaaaaa;
 }
-
 ol {
-list-style-type:circle;
+	list-style-type:circle;
 }
-
 ul {
-list-style-type:square;
+	list-style-type:square;
 }
-
-p.solid {border-style: solid;}
-
+p.solid {
+	border-style: solid;
+}
 .jobtitle {
-color: #A07423;
+	color: #A07423;
 }
-
 a {
-color: #C6AA75;
+	color: #C6AA75;
 }
