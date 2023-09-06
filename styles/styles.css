@@ -37,6 +37,8 @@ nav {
 }
 nav a {
 	flex-grow: 1;
+	/* Gives a margin between links */
+	margin: 0 5px 0;
 	padding: 7px;
 	text-align: center;
 	text-decoration: none;
@@ -44,6 +46,10 @@ nav a {
 	/* background-color: #e7c597; */
 	border: 1px solid #fff6e4;
 	border-radius: 20px;
+}
+/* Excludes the first and last nav links from having a margin */
+nav a:first-child, a:last-child {
+	margin: 0;
 }
 /* To be clear that this is a button that can be pressed */
 nav a:hover {
