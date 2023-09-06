@@ -72,6 +72,15 @@ aside {
 	width: 25%;
 	box-shadow: 10px 10px 5px #aaaaaa;
 }
+header {
+	padding: 20px;
+	display: flex;
+}
+header h1 {
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	margin-top: 60px;
+	margin-left: 20px;
+}
 /* Text elements */
 h1, h2, h3 {
 	margin: 0;
@@ -102,19 +111,6 @@ a {
 	color: #A07423;
 }
 /* IDs */
-#title {
-	padding: 20px;
-	display: flex;
-}
-#title h1 {
-	font-family: Georgia, 'Times New Roman', Times, serif;
-	margin-top: 60px;
-	margin-left: 20px;
-}
-#postscript {
-	padding: 10px;
-	text-align: center;
-}
 #logo {
 	height: 150px;
 }
