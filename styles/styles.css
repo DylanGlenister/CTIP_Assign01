@@ -8,11 +8,13 @@ description: This is the singular stylesheet for the assignment website
 * {
 	font-family: Arial, Helvetica, sans-serif, system-ui;
 }
+/* A margin of 0 stops a white border from appearing around the page */
 body {
 	margin: 0;
 	background-color: #47382b;
 }
 /* Semantic elements */
+/* A nice gradient fro the header and footer */
 header, footer {
 	background: rgb(255,247,238);
 	background: linear-gradient(90deg, rgba(255,247,238,1) 0%, rgba(241,215,175,1) 50%, rgba(139,109,65,1) 75%, rgba(102,79,56,1) 100%);
@@ -26,6 +28,7 @@ footer p {
 	width: 20%;
 	text-align: center;
 }
+/* A separate, more subtle gradient for the nav bar */
 nav {
 	background: rgb(255,231,199);
 	background: linear-gradient(90deg, rgba(255,231,199,1) 0%, rgba(214,181,137,1) 100%);
@@ -43,18 +46,29 @@ nav a {
 	border: 5px solid #a8754c;
 	border-radius: 10px;
 }
+/* To be clear that this is a button that can be pressed */
 nav a:hover {
 	background-color: #f5d9b0;
 }
+/* Since the whole page background was changed we need to make the main section white again */
 main {
 	padding: 20px;
 	background-color: #ffffff;
 }
+/* Giving the primary elements a border */
 header, nav, main, footer {
 	margin: 8px;
 	border: 5px solid #a8754c;
 	border-radius: 20px;
-
+}
+aside {
+	border: 4px inset #A07423 ;
+	border-radius: 14px;
+	margin: 1em;
+	padding: 1em;
+	float: right;
+	width: 25%;
+	box-shadow: 10px 10px 5px #aaaaaa;
 }
 /* Text elements */
 h1, h2, h3 {
@@ -69,7 +83,22 @@ h2 {
 h3 {
 	font-size: 1.3em;
 }
+ol {
+	list-style-type:circle;
+}
+ul {
+	list-style-type:square;
+}
+a {
+	color: #70531c;
+}
 /* Classes */
+.solid {
+	border-style: solid;
+}
+.jobtitle {
+	color: #A07423;
+}
 /* IDs */
 #title {
 	padding: 20px;
@@ -87,35 +116,13 @@ h3 {
 #logo {
 	height: 150px;
 }
+/* The main section of index.html will have a background image */
 #index {
 	background-image: url(https://1.bp.blogspot.com/-bqCtt5cDSE0/XxohvnuopxI/AAAAAAAA10c/iZJK2sngUcoeS7h7Qg0ijD_R4phvuwj0QCLcBGAsYHQ/s2560/coffee_beans_beans_coffee_177761_3840x2160.jpg);
 	background-size: 100%;
 }
+/* The article of index.html will not have a background image */
 #index article {
 	background-color: #ffffff;
 	background-image: none;
-}
-aside {
-	border: 4px inset #A07423 ;
-	border-radius: 14px;
-	margin: 1em;
-	padding: 1em;
-	float: right;
-	width: 25%;
-	box-shadow: 10px 10px 5px #aaaaaa;
-}
-ol {
-	list-style-type:circle;
-}
-ul {
-	list-style-type:square;
-}
-p.solid {
-	border-style: solid;
-}
-.jobtitle {
-	color: #A07423;
-}
-a {
-	color: #C6AA75;
 }
