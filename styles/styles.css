@@ -5,6 +5,7 @@ created: 03/08/2023
 last modified: 05/09/2023
 description: This is the singular stylesheet for the assignment website
 */
+/* All selector */
 * {
 	font-family: Arial, Helvetica, sans-serif, system-ui;
 }
@@ -129,4 +130,23 @@ table, th, td{
 #index article {
 	background-color: #ffffff;
 	background-image: none;
+}
+/* Fade in animation that scales in duration down the page */
+header {
+	animation: fadeIn 0.5s;
+}
+nav {
+	animation: fadeIn 1.2s;
+}
+main {
+	animation: fadeIn 1.9s;
+}
+footer {
+	animation: fadeIn 2.6s;
+}
+/* Animation keyframes */
+@keyframes fadeIn {
+	0% { opacity: 0; }
+	20% { opacity: 0; }
+	100% { opacity: 1; }
 }
