@@ -52,6 +52,7 @@ nav a {
 /* To be clear that this is a button that can be pressed */
 nav a:hover {
 	background-color: #fff6e4;
+	transition: background-color 1s;
 }
 /* Since the whole page background was changed we need to make the main section white again */
 main {
@@ -176,4 +177,22 @@ main {
 }
 footer {
 	animation: fadeIn 2.6s;
+}
+/* Dynamic layout */
+@media screen and (max-width: 45em) {
+	nav, footer {
+		flex-direction: column;
+	}
+	nav a, nav a:first-child, nav a:last-child {
+		flex-grow: 1;
+		margin: 0 20%;
+		padding: 7px;
+		background: #e2c496;
+		border: 2px solid #5f5134;
+		font-size: 1.4em;
+	}
+	/* Have to re-include this for it to work because I overrode the background colour */
+	nav a:hover {
+		background-color: #fff6e4;
+	}
 }
