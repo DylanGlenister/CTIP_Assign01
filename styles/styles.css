@@ -9,7 +9,7 @@ description: This is the singular stylesheet for the assignment website
 	font-family: Arial, Helvetica, sans-serif, system-ui;
 }
 body {
-	margin: 0px;
+	margin: 0;
 }
 /* Semantic elements */
 header, footer {
@@ -41,6 +41,15 @@ main {
 h1, h2, h3 {
 	margin: 0;
 }
+h1 {
+	font-size: 2.6em;
+}
+h2 {
+	font-size: 2em;
+}
+h3 {
+	font-size: 1.3em;
+}
 /* Classes */
 .highlight {
 	height: 5px;
@@ -51,14 +60,14 @@ h1, h2, h3 {
 	padding: 20px;
 	display: flex;
 }
-#postscript {
-	padding: 10px;
-	text-align: center;
-}
 #title h1 {
 	font-family: Georgia, 'Times New Roman', Times, serif;
 	margin-top: 60px;
 	margin-left: 20px;
+}
+#postscript {
+	padding: 10px;
+	text-align: center;
 }
 #logo {
 	height: 150px;
