@@ -34,9 +34,13 @@ nav a {
 nav a:hover {
 	border: 1px solid lightgrey;
 }
-main { padding: 20px;}
+main {
+	padding: 20px;
+}
 /* Text elements */
-h1, h2, h3 { margin: 0;}
+h1, h2, h3 {
+	margin: 0;
+}
 /* Classes */
 .highlight {
 	height: 5px;
