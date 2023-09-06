@@ -24,15 +24,16 @@ nav {
 }
 nav a {
 	flex-grow: 1;
-	margin: 5px;
+	margin: 4px;
 	text-align: center;
 	text-decoration: none;
 	color: rgb(44, 32, 19);
-	padding: 3px;
-	border: 1px solid #ffffff;
+	padding: 2px;
+	border: 5px solid #a8754c;
+	background-color: #e7c597;
 }
 nav a:hover {
-	border: 1px solid lightgrey;
+	background-color: #f5d9b0;
 }
 main {
 	padding: 20px;
