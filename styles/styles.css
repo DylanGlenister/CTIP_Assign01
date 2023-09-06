@@ -13,43 +13,40 @@ body {
 	margin: 0;
 	background-color: #47382b;
 }
-/* Semantic elements */
+/* ===== Semantic elements ===== */
 /* A nice gradient fro the header and footer */
 header, footer {
 	background: rgb(255,247,238);
 	background: linear-gradient(90deg, rgba(255,247,238,1) 0%, rgba(241,215,175,1) 50%, rgba(139,109,65,1) 75%, rgba(102,79,56,1) 100%);
 }
-footer {
-	display: flex;
-	justify-content: space-evenly;
-}
-footer p {
-	margin: 10px;
-	width: 20%;
-	text-align: center;
-}
 /* A separate, more subtle gradient for the nav bar */
 nav {
 	background: rgb(255,231,199);
 	background: linear-gradient(90deg, rgba(255,231,199,1) 0%, rgba(214,181,137,1) 100%);
+}
+/* Both the navigation menu and the footer have a horizontal list of elements */
+nav, footer {
 	display: flex;
 	justify-content: space-evenly;
 }
-nav a {
+/* How the elements will format themselves in their parent */
+nav a, footer p {
 	flex-grow: 1;
-	/* Gives a margin between links */
 	margin: 0 5px 0;
 	padding: 7px;
 	text-align: center;
-	text-decoration: none;
 	color: rgb(44, 32, 19);
+}
+/* Excludes the first and last elemnts from having a margin */
+nav a:first-child, nav a:last-child, footer p:first-child, footer p:last-child {
+	margin: 0;
+}
+/* Extra formatting for the links */
+nav a {
 	/* background-color: #e7c597; */
+	text-decoration: none;
 	border: 1px solid #fff6e4;
 	border-radius: 20px;
-}
-/* Excludes the first and last nav links from having a margin */
-nav a:first-child, a:last-child {
-	margin: 0;
 }
 /* To be clear that this is a button that can be pressed */
 nav a:hover {
