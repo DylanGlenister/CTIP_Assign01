@@ -123,6 +123,9 @@ ul {
 a {
 	color: #70531c;
 }
+p {
+	margin: 10px 0;
+}
 table, th, td{
 	border: 1px solid black
 }
