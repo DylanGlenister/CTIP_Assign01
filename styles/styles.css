@@ -16,6 +16,15 @@ header, footer {
 	background: rgb(255,247,238);
 	background: linear-gradient(90deg, rgba(255,247,238,1) 0%, rgba(241,215,175,1) 50%, rgba(139,109,65,1) 75%, rgba(102,79,56,1) 100%);
 }
+footer {
+	display: flex;
+	justify-content: space-evenly;
+}
+footer p {
+	margin: 10px;
+	width: 20%;
+	text-align: center;
+}
 nav {
 	background: rgb(255,231,199);
 	background: linear-gradient(90deg, rgba(255,231,199,1) 0%, rgba(214,181,137,1) 100%);
