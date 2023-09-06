@@ -37,18 +37,17 @@ nav {
 }
 nav a {
 	flex-grow: 1;
-	margin: 4px;
-	padding: 2px;
+	padding: 7px;
 	text-align: center;
 	text-decoration: none;
 	color: rgb(44, 32, 19);
-	background-color: #e7c597;
-	border: 5px solid #a8754c;
-	border-radius: 10px;
+	/* background-color: #e7c597; */
+	border: 1px solid #fff6e4;
+	border-radius: 20px;
 }
 /* To be clear that this is a button that can be pressed */
 nav a:hover {
-	background-color: #f5d9b0;
+	background-color: #fff6e4;
 }
 /* Since the whole page background was changed we need to make the main section white again */
 main {
