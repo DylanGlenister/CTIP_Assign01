@@ -148,7 +148,7 @@ table, th, td{
 }
 /* The main section of index.html will have a background image */
 #index {
-	background-image: url(https://1.bp.blogspot.com/-bqCtt5cDSE0/XxohvnuopxI/AAAAAAAA10c/iZJK2sngUcoeS7h7Qg0ijD_R4phvuwj0QCLcBGAsYHQ/s2560/coffee_beans_beans_coffee_177761_3840x2160.jpg);
+	background-image: url(./images/beans.jpg);
 	background-size: 100%;
 }
 /* The article of index.html will not have a background image */
