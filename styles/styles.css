@@ -70,7 +70,7 @@ header, nav, main, footer {
 aside {
 	border: 4px inset #A07423 ;
 	border-radius: 14px;
-	margin: 1em;
+	margin: 2em;
 	padding: 1em;
 	float: right;
 	width: 25%;
@@ -142,6 +142,7 @@ table, th, td{
 }
 .jobtitle {
 	color: #A07423;
+	margin-left: 1em;
 }
 .codeBlock {
 	width: fit-content;
@@ -205,11 +206,21 @@ footer {
 
 section {
 	border: 2px solid #A88B55;
+	border-radius: 1em;
+	padding: 3px;
 }
 
-marquee:hover {
-	color: limegreen;
-	font-size:  1.5em;
+strong {
+	margin-left: 2em;
+}
+
+.description {
+	margin-left: 2em;
+}
+
+.opening {
+	color: #A07423;
+	margin-left: 5px;
 }
 .work {
 	background-color: wheat;
