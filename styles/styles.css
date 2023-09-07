@@ -76,6 +76,9 @@ aside {
 	width: 25%;
 	box-shadow: 10px 10px 5px #aaaaaa;
 }
+section {
+	border: 2px solid #A88B55;
+}
 header {
 	padding: 20px;
 	display: flex;
@@ -137,6 +140,22 @@ table, th, td{
 	width: min-content;
 	clear: both;
 }
+dd {
+	float: right;
+}
+dl {
+	width: 20em;
+	float: left;
+}
+dt {
+	width: 10em;
+}
+figure {
+	float: right;
+	border: 5px double black;
+	border-radius: 8px;
+}
+
 /* ===== Classes ===== */
 .solid {
 	border-style: solid;
@@ -150,6 +169,9 @@ table, th, td{
 	background-color: #e6e6e6;
 	border: 2px solid #555555;
 	border-radius: 10px;
+}
+.work {
+	background-color: wheat;
 }
 /* ===== IDs ===== */
 #logo {
@@ -202,27 +224,4 @@ footer {
 		border-radius: 15px;
 		font-size: 1.4em;
 	}
-}
-
-section {
-	border: 2px solid #A88B55;
-}
-
-.work {
-	background-color: wheat;
-}
-dd {
-	float: right;
-}
-dl {
-	width: 20em;
-	float: left;
-}
-dt {
-	width: 10em;
-}
-figure {
-	float: right;
-	border: 5px double black;
-	border-radius: 8px;
 }
