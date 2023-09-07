@@ -28,19 +28,17 @@ nav {
 /* Both the navigation menu and the footer have a horizontal list of elements */
 nav, footer {
 	display: flex;
-	justify-content: space-evenly;
+	flex-wrap: wrap;
+	justify-content: space-between;
 }
 /* How the elements will format themselves in their parent */
 nav a, footer p {
 	flex-grow: 1;
-	margin: 0 5px 0;
-	padding: 7px;
+	margin: 0 5px;
+	padding: 7px 3.8%;
 	text-align: center;
 	color: rgb(44, 32, 19);
-}
-/* Excludes the first and last elemnts from having a margin */
-nav a:first-child, nav a:last-child, footer p:first-child, footer p:last-child {
-	margin: 0;
+	font-size: 1.2em;
 }
 /* Extra formatting for the links */
 nav a {
@@ -64,9 +62,6 @@ header, nav, main, footer {
 	margin: 8px;
 	border: 5px solid #a8754c;
 	border-radius: 20px;
-}
-article {
-	padding: 5px;
 }
 aside {
 	border: 4px inset #A07423 ;
@@ -157,6 +152,8 @@ table, th, td{
 #index article {
 	background-color: #ffffff;
 	background-image: none;
+	padding: 5px;
+	border-radius: 2px;
 }
 /* ===== Animation ===== */
 /* Animation keyframes */
@@ -180,19 +177,10 @@ footer {
 }
 /* Dynamic layout */
 @media screen and (max-width: 45em) {
-	nav, footer {
-		flex-direction: column;
-	}
 	nav a, nav a:first-child, nav a:last-child {
-		flex-grow: 1;
-		margin: 0 20%;
-		padding: 7px;
-		background: #e2c496;
-		border: 2px solid #5f5134;
+		padding: 10px 3.8%;
+		border: 5px solid #86684c;
+		border-radius: 15px;
 		font-size: 1.4em;
-	}
-	/* Have to re-include this for it to work because I overrode the background colour */
-	nav a:hover {
-		background-color: #fff6e4;
 	}
 }
