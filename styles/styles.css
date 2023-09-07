@@ -156,7 +156,13 @@ table, th, td{
 	background-color: #ffffff;
 	background-image: none;
 	padding: 5px;
-	border-radius: 2px;
+	border-radius: 10px;
+	text-align: center;
+	background-color: #f0ddcd;
+}
+#index h2 {
+	font-size: 2em;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 /* ===== Animation ===== */
 /* Animation keyframes */
