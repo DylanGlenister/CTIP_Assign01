@@ -34,10 +34,10 @@
 			</ul>
 			<p>The fade in effect goes beyond the requirements as it adds a new layer into the website: time. Instead of a static page, the semantic elements flow onto the screen smoothly.</p>
 			<p>Implementing this feature is surprisingly trivial.<br>
-				First you define your keyframes like so:</p>
+				To implement this in the css, first you define your keyframes like so:</p>
 			<div class="codeBlock">
-			<!-- Ugly but required for correct formatting -->
-			<pre><code>@keyframes fadeIn {
+				<!-- Ugly but required for correct formatting -->
+				<pre><code>@keyframes fadeIn {
     0% { opacity: 0; }
     100% { opacity: 1; }
 }</code></pre>
@@ -52,8 +52,25 @@
 			<a href="https://blog.hubspot.com/website/css-fade-in">How to Add a CSS Fade-in Transition Animation to Text, Images, Scroll & Hover</a></p>
 		</section>
 		<section>
-			<h2>Second Enhancement</h2>
-			<p>TODO</p>
+			<h2>Dynamic Layout</h2>
+			<p>Dynamic layout uses screen width checking to modify certain elements to be more mobile friendly.</p>
+			<p>The resize effect can be seen on all pages in the nav bar:</p>
+			<ul>
+				<li><a href="./index.html">index.html</a></li>
+				<li><a href="./about.html">about.html</a></li>
+				<li><a href="./jobs.html">jobs.html</a></li>
+				<li><a href="./apply.html">apply.html</a></li>
+				<li><a href="./enhancements.html">enhancements.html</a></li>
+			</ul>
+			<p>The dynamic layout goes beyond the requirements as it provides a more acceptable user-experience on the narrow windows found on mobile devices.</p>
+			<p>Implementing this feature requires very flew lines of code.<br>
+				All you have to do is provide the following block in the css file:</p>
+			<div class="codeBlock">
+				<pre><code>@media screen and (max-width: 45em) {
+    /* Your code here */
+}</code></pre>
+			</div>
+			<p>Inside this block you define the styles that you would like to occur only when the screen is below 45em.</p>
 		</section>
 	</main>
 	<footer>
