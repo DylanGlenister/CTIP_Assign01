@@ -127,7 +127,14 @@ p {
 	margin: 10px 0;
 }
 table, th, td{
-	border: 1px solid black
+	border: 1px solid black;
+	background-color: #c79b7a;
+	border-radius: 4px;
+	font-size: small;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	width: min-content;
 }
 /* ===== Classes ===== */
 .solid {
@@ -203,4 +210,7 @@ section {
 marquee:hover {
 	color: limegreen;
 	font-size:  1.5em;
+}
+.work {
+	background-color: wheat;
 }
