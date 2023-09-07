@@ -164,14 +164,6 @@ table, th, td{
 	0% { opacity: 0; }
 	20% { opacity: 0; }
 	100% { opacity: 1; }
-aside {
-border: 4px inset #A07423 ;
-border-radius: 14px;
-margin: 2em 1em;
-padding: 1em;
-float: right;
-width: 25%;
-box-shadow: 10px 10px 5px #aaaaaa;
 }
 /* Fade in animation that scales in duration down the page */
 header {
@@ -204,5 +196,4 @@ section {
 marquee:hover {
 	color: limegreen;
 	font-size:  1.5em;
-	fond
 }
