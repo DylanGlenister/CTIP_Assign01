@@ -78,6 +78,8 @@ aside {
 }
 section {
 	border: 2px solid #A88B55;
+	border-radius: 1em;
+	padding: 3px;
 }
 header {
 	padding: 20px;
@@ -227,11 +229,6 @@ footer {
 	}
 }
 
-section {
-	border: 2px solid #A88B55;
-	border-radius: 1em;
-	padding: 3px;
-}
 
 .work {
 	background-color: wheat;
