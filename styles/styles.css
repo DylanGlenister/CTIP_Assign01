@@ -97,9 +97,6 @@ code {
 pre {
 	margin: 0;
 }
-figure img {
-	width: 400px;
-}
 /* ===== Text elements ===== */
 h1, h2, h3, h4, h5, h6 {
 	margin: 5px 2px;
@@ -142,8 +139,8 @@ table, th, td{
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
-	width: min-content;
 	clear: both;
+	min-height: 50em;
 }
 dd {
 	float: right;
@@ -160,7 +157,12 @@ figure {
 	border: 5px double black;
 	border-radius: 8px;
 }
-
+figure img {
+	width: 400px;
+}
+strong {
+	margin-left: 2em;
+}
 /* ===== Classes ===== */
 .solid {
 	border-style: solid;
@@ -178,6 +180,13 @@ figure {
 }
 .work {
 	background-color: wheat;
+}
+.description {
+	margin-left: 2em;
+}
+.opening {
+	color: #A07423;
+	margin-left: 5px;
 }
 /* ===== IDs ===== */
 #logo {
@@ -230,35 +239,4 @@ footer {
 		border-radius: 15px;
 		font-size: 1.4em;
 	}
-}
-
-
-.work {
-	background-color: wheat;
-}
-dd {
-	float: right;
-}
-dl {
-	width: 20em;
-	float: left;
-}
-dt {
-	width: 10em;
-}
-figure {
-	float: right;
-	border: 5px double black;
-	border-radius: 8px;
-}
-
-strong {
-	margin-left: 2em;
-}
-.description {
-	margin-left: 2em;
-}
-.opening {
-	color: #A07423;
-	margin-left: 5px;
 }
