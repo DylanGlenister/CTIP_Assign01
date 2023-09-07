@@ -135,6 +135,7 @@ table, th, td{
 	margin-right: auto;
 	text-align: center;
 	width: min-content;
+	clear: both;
 }
 /* ===== Classes ===== */
 .solid {
