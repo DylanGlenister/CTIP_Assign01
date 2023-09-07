@@ -46,7 +46,7 @@ nav a {
 	/* background-color: #e7c597; */
 	text-decoration: none;
 	border: 1px solid #fff6e4;
-	border-radius: 16px;
+	border-radius: 20px;
 }
 nav a:first-child, nav a:last-child {
 	margin: 0;
@@ -70,7 +70,7 @@ header, nav, main, footer {
 aside {
 	border: 4px inset #A07423 ;
 	border-radius: 14px;
-	margin: 2em;
+	margin: 1em;
 	padding: 1em;
 	float: right;
 	width: 25%;
@@ -142,7 +142,6 @@ table, th, td{
 }
 .jobtitle {
 	color: #A07423;
-	margin-left: 1em;
 }
 .codeBlock {
 	width: fit-content;
@@ -206,22 +205,23 @@ footer {
 
 section {
 	border: 2px solid #A88B55;
-	border-radius: 1em;
-	padding: 3px;
 }
 
-strong {
-	margin-left: 2em;
-}
-
-.description {
-	margin-left: 2em;
-}
-
-.opening {
-	color: #A07423;
-	margin-left: 5px;
-}
 .work {
 	background-color: wheat;
+}
+dd {
+	float: right;
+}
+dl {
+	width: 20em;
+	float: left;
+}
+dt {
+	width: 10em;
+}
+figure {
+	float: right;
+	border: 5px double black;
+	border-radius: 8px;
 }
