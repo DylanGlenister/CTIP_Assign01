@@ -46,7 +46,7 @@ nav a {
 	/* background-color: #e7c597; */
 	text-decoration: none;
 	border: 1px solid #fff6e4;
-	border-radius: 20px;
+	border-radius: 16px;
 }
 nav a:first-child, nav a:last-child {
 	margin: 0;
