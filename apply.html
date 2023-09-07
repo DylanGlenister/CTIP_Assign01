@@ -25,7 +25,7 @@
 	<!-- MAIN -->
 	<main>
 		<h2>Apply Here</h2>
-		<form action="https://mercury.swin.edu.au/it000000/formtest.php">
+		<form method="post" action="https://mercury.swin.edu.au/it000000/formtest.php">
 			<fieldset>
 				<legend>Application Form</legend>
 				<p>Fields marked with an <em>asterisk*</em> are <strong>required</strong></p>
@@ -36,10 +36,10 @@
 				<fieldset>
 					<legend>About you</legend>
 					<label for="given_names">Given name: *</label>
-					<input type="text" name="given_names" id="given_names" size="40" required="required" pattern="[\w\s]{1,20}">
+					<input type="text" name="given_names" id="given_names" size="40" required="required" pattern="[A-za-z\s]{1,20}">
 					<br>
 					<label for="surname">Surname name: *</label>
-					<input type="text" name="surname" id="surname" size="40" required="required" pattern="[\w\s]{1,20}">
+					<input type="text" name="surname" id="surname" size="40" required="required" pattern="[A-Za-z\s]{1,20}">
 					<br>
 					<label for="dob">Date of Birth: *</label>
 					<input type="date" name="dob" id="dob" required="required">
@@ -60,10 +60,10 @@
 				<fieldset>
 					<legend>Contact Information</legend>
 					<label for="address">Street address: *</label>
-					<input type="text" name="address" id="address" size="40" required="required" pattern="[\d\w\s]{1,40}">
+					<input type="text" name="address" id="address" size="40" required="required" pattern="*{1,40}">
 					<br>
 					<label for="town">Suburb/Town: *</label>
-					<input type="text" name="town" id="town" required="required" pattern="[\w\s]+">
+					<input type="text" name="town" id="town" required="required" pattern="[A-Za-z]+">
 					<br>
 					<label for="state">State/Territory: *</label>
 					<select name="state" id="state" required="required">
@@ -89,7 +89,7 @@
 					<input type="email" name="email" id="email" size="30" required="required">
 					<br>
 					<label for="phonenum">Phone number: *</label>
-					<input type="text" name="phonenum" id="phonenum" size="10" required="required" pattern="\d{8,12}">
+					<input type="text" name="phonenum" id="phonenum" size="10" required="required" pattern="[\d\s]{8,12}">
 					<br>
 				</fieldset>
 				<!-- YOUR SKILLS -->
