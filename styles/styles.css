@@ -13,6 +13,7 @@ description: This is the singular stylesheet for the assignment website
 body {
 	margin: 0;
 	background-color: #47382b;
+	min-width: 36em;
 }
 /* ===== Semantic elements ===== */
 /* A nice gradient fro the header and footer */
