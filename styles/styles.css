@@ -47,6 +47,9 @@ nav a {
 	border: 1px solid #fff6e4;
 	border-radius: 20px;
 }
+nav a:first-child, nav a:last-child {
+	margin: 0;
+}
 /* To be clear that this is a button that can be pressed */
 nav a:hover {
 	background-color: #fff6e4;
@@ -178,6 +181,7 @@ footer {
 /* Dynamic layout */
 @media screen and (max-width: 45em) {
 	nav a, nav a:first-child, nav a:last-child {
+		margin: 0 5px;
 		padding: 10px 3.8%;
 		border: 5px solid #86684c;
 		border-radius: 15px;
