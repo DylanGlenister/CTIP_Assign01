@@ -16,7 +16,7 @@ body {
 	min-width: 36em;
 }
 /* ===== Semantic elements ===== */
-/* A nice gradient fro the header and footer */
+/* A nice gradient for the header and footer */
 header, footer {
 	background: rgb(255,247,238);
 	background: linear-gradient(90deg, rgba(255,247,238,1) 0%, rgba(241,215,175,1) 50%, rgba(139,109,65,1) 75%, rgba(102,79,56,1) 100%);
