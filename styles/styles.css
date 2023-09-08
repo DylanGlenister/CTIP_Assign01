@@ -142,15 +142,16 @@ table, th, td{
 	clear: both;
 	min-height: 50em;
 }
+dl {
+	float: left;
+	width: 20em;
+}
+dt{
+	float: left;
+	clear: left;
+}
 dd {
 	float: right;
-}
-dl {
-	width: 20em;
-	float: left;
-}
-dt {
-	width: 10em;
 }
 figure {
 	float: right;
